@@ -2,7 +2,6 @@ package dev.andante.betterequipmenttooltips.mixin;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtList;
-import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.*;
 import net.minecraft.util.Formatting;
 import org.spongepowered.asm.mixin.Mixin;
@@ -55,7 +54,7 @@ public abstract class ItemStackMixin {
                 text.formatted(Formatting.DARK_GREEN);
             }
 
-            return (E) ScreenTexts.space().append(text);
+            return (E) Text.literal(" ").append(text);
         }
 
         return e;
@@ -90,7 +89,7 @@ public abstract class ItemStackMixin {
             if (text.getContent() instanceof TranslatableTextContent content) {
                 String key = content.getKey();
                 if (key.startsWith("attribute.modifier.")) {
-                    return (E) ScreenTexts.space().append(text);
+                    return (E) Text.literal(" ").append(text);
                 }
             }
         }
