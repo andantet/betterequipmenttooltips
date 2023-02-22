@@ -20,7 +20,7 @@ import java.util.Objects;
 @Mixin(ItemStack.class)
 public abstract class ItemStackMixin {
     @Unique
-    private static final MutableText BET_ENCHANTMENTS_HEADER_TEXT = Text.translatable("text.betterenchantmenttooltips.enchantments").formatted(Formatting.GRAY);
+    private static final MutableText BET_ENCHANTMENTS_HEADER_TEXT = Text.translatable("text.betterequipmenttooltips.enchantments").formatted(Formatting.GRAY);
 
     /**
      * Appends an 'Enchantments' header to the top of the enchantments tooltip.
