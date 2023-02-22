@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "betterequipmenttooltips",
+  "version": "${version}",
+  "name": "Better Equipment Tooltips",
+  "description": "Improves the tooltips of equipment items.",
+  "authors": [
+    "Andante"
+  ],
+  "contact": {
+    "homepage": "https://andante.dev",
+    "sources": "https://github.com/andantet/betterequipmenttooltips",
+    "issues": "https://github.com/andantet/betterequipmenttooltips/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/betterequipmenttooltips/icon.png",
+  "environment": "client",
+  "mixins": [ "betterequipmenttooltips.mixins.json" ],
+  "depends": {
+    "minecraft": ">=1.19.3"
+  }
+}
