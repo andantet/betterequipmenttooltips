@@ -54,7 +54,7 @@ public abstract class ItemStackMixin {
             Style style = text.getStyle();
             TextColor color = style.getColor();
             if (color != null && Objects.equals(color.getName(), Formatting.GRAY.getName())) {
-                text.formatted(Formatting.DARK_GREEN);
+                text.formatted(Formatting.GREEN);
             }
 
             return (E) Text.literal(" ").append(text);
